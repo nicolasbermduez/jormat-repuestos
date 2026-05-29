@@ -19,8 +19,8 @@ export default function QuoteForm() {
   };
 
   return (
-    <section id="cotizar" className="py-24 bg-[#010118] relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue-900/15 rounded-full blur-[140px] pointer-events-none" />
+    <section id="cotizar" className="py-24 bg-[#020c02] relative overflow-hidden">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-900/15 rounded-full blur-[140px] pointer-events-none" />
 
       <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -29,7 +29,7 @@ export default function QuoteForm() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-medium tracking-widest uppercase mb-5">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/25 text-green-400 text-xs font-medium tracking-widest uppercase mb-5">
             Formulario de Cotización
           </div>
           <h2 className="text-3xl sm:text-4xl font-black text-white mb-4">
@@ -60,7 +60,7 @@ export default function QuoteForm() {
               <p className="text-gray-400">Te contactaremos a la brevedad para confirmar tu cotización.</p>
               <button
                 onClick={() => setSubmitted(false)}
-                className="mt-6 text-blue-400 hover:text-blue-300 text-sm"
+                className="mt-6 text-green-400 hover:text-green-300 text-sm"
               >
                 Enviar otra solicitud
               </button>
@@ -79,11 +79,11 @@ export default function QuoteForm() {
                   <label className="text-gray-400 text-xs font-medium block mb-1.5">Marca del camión *</label>
                   <select
                     required
-                    className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-blue-500/50 transition-all"
+                    className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white text-sm focus:outline-none focus:border-green-500/50 transition-all"
                   >
                     <option value="">Seleccionar</option>
                     {truckBrands.map((b) => (
-                      <option key={b} value={b} className="bg-[#0d0d2b]">{b}</option>
+                      <option key={b} value={b} className="bg-[#060f06]">{b}</option>
                     ))}
                   </select>
                 </div>
@@ -100,7 +100,7 @@ export default function QuoteForm() {
                   <input
                     type="file"
                     accept="image/*"
-                    className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-gray-400 text-sm focus:outline-none focus:border-blue-500/50 transition-all file:mr-3 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:bg-blue-500/20 file:text-blue-400 cursor-pointer"
+                    className="w-full px-4 py-2.5 rounded-xl bg-white/5 border border-white/10 text-gray-400 text-sm focus:outline-none focus:border-green-500/50 transition-all file:mr-3 file:py-1 file:px-3 file:rounded-full file:border-0 file:text-xs file:bg-green-500/20 file:text-green-400 cursor-pointer"
                   />
                 </div>
               </div>
@@ -110,14 +110,14 @@ export default function QuoteForm() {
                 <textarea
                   rows={4}
                   placeholder="Información adicional que nos ayude a encontrar el repuesto correcto..."
-                  className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-blue-500/50 transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-green-500/50 transition-all resize-none"
                 />
               </div>
 
               <button
                 type="submit"
                 disabled={loading}
-                className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white font-semibold transition-all shadow-lg shadow-blue-500/25 disabled:opacity-70"
+                className="w-full flex items-center justify-center gap-2 py-3.5 rounded-xl bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 text-white font-semibold transition-all shadow-lg shadow-green-500/25 disabled:opacity-70"
               >
                 {loading ? (
                   <div className="w-5 h-5 rounded-full border-2 border-white/30 border-t-white animate-spin" />
@@ -148,7 +148,7 @@ function Field({
         type={type}
         placeholder={placeholder}
         required={required}
-        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-blue-500/50 focus:bg-white/8 transition-all"
+        className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-600 text-sm focus:outline-none focus:border-green-500/50 focus:bg-white/8 transition-all"
       />
     </div>
   );

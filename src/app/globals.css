@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #010118;
+  --background: #020c02;
   --foreground: #ffffff;
 }
 
@@ -29,17 +29,17 @@ body {
   width: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #010118;
+  background: #020c02;
 }
 ::-webkit-scrollbar-thumb {
-  background: #1a2a5e;
+  background: #14532d;
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2a3a8e;
+  background: #15803d;
 }
 
 select option {
-  background: #0d0d2b;
+  background: #060f06;
   color: white;
 }

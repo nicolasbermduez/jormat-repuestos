@@ -26,7 +26,7 @@ export default function ProductModal({ product, onClose }: { product: Product; o
           animate={{ opacity: 1, scale: 1, y: 0 }}
           exit={{ opacity: 0, scale: 0.9, y: 20 }}
           transition={{ type: "spring", damping: 25, stiffness: 300 }}
-          className="relative bg-[#0d0d2b] border border-white/10 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
+          className="relative bg-[#060f06] border border-white/10 rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto shadow-2xl"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Close */}
@@ -40,7 +40,7 @@ export default function ProductModal({ product, onClose }: { product: Product; o
           {/* Image */}
           <div className="relative h-56 overflow-hidden rounded-t-2xl">
             <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#0d0d2b] to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#060f06] to-transparent" />
             <div className={`absolute top-4 left-4 flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium border backdrop-blur-md ${
               product.available
                 ? "bg-green-500/20 border-green-500/30 text-green-400"
@@ -53,7 +53,7 @@ export default function ProductModal({ product, onClose }: { product: Product; o
 
           {/* Content */}
           <div className="p-6">
-            <div className="text-blue-400 text-xs mb-2">{product.category}</div>
+            <div className="text-green-400 text-xs mb-2">{product.category}</div>
             <h2 className="text-white text-xl font-bold mb-1">{product.name}</h2>
             <p className="text-gray-400 text-sm mb-5">{product.description}</p>
 
@@ -66,7 +66,7 @@ export default function ProductModal({ product, onClose }: { product: Product; o
                 { icon: Hash, label: "Código", value: product.code },
               ].map(({ icon: Icon, label, value }) => (
                 <div key={label} className="flex items-start gap-2 p-3 rounded-lg bg-white/5 border border-white/8">
-                  <Icon size={14} className="text-blue-400 mt-0.5 flex-shrink-0" />
+                  <Icon size={14} className="text-green-400 mt-0.5 flex-shrink-0" />
                   <div>
                     <div className="text-gray-500 text-xs">{label}</div>
                     <div className="text-white text-xs font-medium">{value}</div>
@@ -80,7 +80,7 @@ export default function ProductModal({ product, onClose }: { product: Product; o
               <div className="text-gray-400 text-xs uppercase tracking-wider mb-2">Características</div>
               <div className="flex flex-wrap gap-2">
                 {product.features.map((f) => (
-                  <span key={f} className="px-2.5 py-1 rounded-full text-xs bg-blue-500/10 border border-blue-500/20 text-blue-300">
+                  <span key={f} className="px-2.5 py-1 rounded-full text-xs bg-green-500/10 border border-green-500/20 text-green-300">
                     {f}
                   </span>
                 ))}

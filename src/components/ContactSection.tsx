@@ -16,15 +16,15 @@ const contacts = [
     label: "Teléfono 1",
     value: "+56 9 9205 0943",
     href: "tel:+56992050943",
-    color: "text-blue-400",
-    bg: "bg-blue-500/10 border-blue-500/20",
+    color: "text-green-400",
+    bg: "bg-green-500/10 border-green-500/20",
   },
   {
     icon: Phone,
     label: "Teléfono 2",
     value: "+56 9 8807 5107",
     href: "tel:+56988075107",
-    color: "text-cyan-400",
+    color: "text-green-400",
     bg: "bg-cyan-500/10 border-cyan-500/20",
   },
   {
@@ -57,8 +57,8 @@ const sucursales = ["Los Ángeles", "Chillán", "Concepción", "Constitución", 
 
 export default function ContactSection() {
   return (
-    <section id="contacto" className="py-24 bg-[#010118] relative overflow-hidden">
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-900/20 rounded-full blur-[120px] pointer-events-none" />
+    <section id="contacto" className="py-24 bg-[#020c02] relative overflow-hidden">
+      <div className="absolute bottom-0 right-0 w-80 h-80 bg-green-900/20 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -67,7 +67,7 @@ export default function ContactSection() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-medium tracking-widest uppercase mb-5">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/25 text-green-400 text-xs font-medium tracking-widest uppercase mb-5">
             Contáctanos
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4">
@@ -79,7 +79,7 @@ export default function ContactSection() {
           {/* Sucursales */}
           <div className="flex flex-wrap justify-center gap-2 mt-5">
             {sucursales.map((s) => (
-              <span key={s} className="px-3 py-1 rounded-full text-xs bg-blue-500/10 border border-blue-500/20 text-blue-400">
+              <span key={s} className="px-3 py-1 rounded-full text-xs bg-green-500/10 border border-green-500/20 text-green-400">
                 {s}
               </span>
             ))}

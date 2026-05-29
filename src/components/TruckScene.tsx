@@ -13,9 +13,9 @@ function ActrosTruck() {
     }
   });
 
-  const bodyMat = <meshStandardMaterial color="#1a1a2e" metalness={0.9} roughness={0.1} />;
+  const bodyMat = <meshStandardMaterial color="#0a150a" metalness={0.9} roughness={0.1} />;
   const chromeMat = <meshStandardMaterial color="#c0c0c0" metalness={1} roughness={0.05} />;
-  const glassMat = <meshStandardMaterial color="#4a9eff" metalness={0.1} roughness={0} transparent opacity={0.4} />;
+  const glassMat = <meshStandardMaterial color="#4ade80" metalness={0.1} roughness={0} transparent opacity={0.4} />;
   const darkMat = <meshStandardMaterial color="#0a0a0f" metalness={0.8} roughness={0.2} />;
   const redMat = <meshStandardMaterial color="#cc1111" metalness={0.6} roughness={0.2} />;
   const lightYellow = <meshStandardMaterial color="#ffee88" emissive="#ffaa00" emissiveIntensity={2} />;
@@ -113,11 +113,11 @@ function ActrosTruck() {
       {/* DRL strips */}
       <mesh position={[-0.82, 1.32, -1.21]}>
         <boxGeometry args={[0.35, 0.03, 0.02]} />
-        <meshStandardMaterial color="#ffffff" emissive="#88ccff" emissiveIntensity={3} />
+        <meshStandardMaterial color="#ffffff" emissive="#86efac" emissiveIntensity={3} />
       </mesh>
       <mesh position={[0.82, 1.32, -1.21]}>
         <boxGeometry args={[0.35, 0.03, 0.02]} />
-        <meshStandardMaterial color="#ffffff" emissive="#88ccff" emissiveIntensity={3} />
+        <meshStandardMaterial color="#ffffff" emissive="#86efac" emissiveIntensity={3} />
       </mesh>
 
       {/* === BUMPER === */}
@@ -271,11 +271,11 @@ function ActrosTruck() {
       {/* === FUEL TANKS === */}
       <mesh position={[-1.12, 0.35, 1.1]} rotation={[Math.PI / 2, 0, 0]}>
         <cylinderGeometry args={[0.25, 0.25, 0.85, 20]} />
-        <meshStandardMaterial color="#1a1a2e" metalness={0.8} roughness={0.2} />
+        <meshStandardMaterial color="#0a150a" metalness={0.8} roughness={0.2} />
       </mesh>
       <mesh position={[1.12, 0.35, 1.1]} rotation={[Math.PI / 2, 0, 0]}>
         <cylinderGeometry args={[0.25, 0.25, 0.85, 20]} />
-        <meshStandardMaterial color="#1a1a2e" metalness={0.8} roughness={0.2} />
+        <meshStandardMaterial color="#0a150a" metalness={0.8} roughness={0.2} />
       </mesh>
 
       {/* === STEP RAILS === */}
@@ -310,7 +310,7 @@ function Ground() {
         depthScale={1.2}
         minDepthThreshold={0.4}
         maxDepthThreshold={1.4}
-        color="#050510"
+        color="#020c02"
         metalness={0.8}
         mirror={0}
       />
@@ -331,7 +331,7 @@ function Particles() {
       <bufferGeometry>
         <bufferAttribute attach="attributes-position" args={[positions, 3]} />
       </bufferGeometry>
-      <pointsMaterial size={0.04} color="#4a9eff" transparent opacity={0.6} sizeAttenuation />
+      <pointsMaterial size={0.04} color="#4ade80" transparent opacity={0.6} sizeAttenuation />
     </points>
   );
 }
@@ -346,10 +346,10 @@ export default function TruckScene() {
         <Suspense fallback={null}>
           <ambientLight intensity={0.3} />
           <directionalLight position={[10, 10, 5]} intensity={2} color="#ffffff" castShadow />
-          <directionalLight position={[-5, 5, -5]} intensity={0.8} color="#4466ff" />
-          <pointLight position={[0, 5, 0]} intensity={1} color="#2244aa" />
+          <directionalLight position={[-5, 5, -5]} intensity={0.8} color="#16a34a" />
+          <pointLight position={[0, 5, 0]} intensity={1} color="#166534" />
           <pointLight position={[0, 0.5, -2]} intensity={3} color="#4488ff" distance={6} />
-          <pointLight position={[-3, 1, 0]} intensity={1.5} color="#0033ff" distance={8} />
+          <pointLight position={[-3, 1, 0]} intensity={1.5} color="#15803d" distance={8} />
 
           <Environment preset="night" />
 
@@ -361,7 +361,7 @@ export default function TruckScene() {
           <Particles />
 
           {/* Atmospheric fog */}
-          <fog attach="fog" args={["#010118", 15, 35]} />
+          <fog attach="fog" args={["#020c02", 15, 35]} />
         </Suspense>
       </Canvas>
     </div>

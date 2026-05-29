@@ -16,9 +16,9 @@ const categories = [
     icon: Shield,
     name: "Parachoques",
     desc: "Protección frontal de alta resistencia. Diseños originales y sport.",
-    color: "from-blue-500/20 to-blue-600/5",
-    border: "border-blue-500/20",
-    iconColor: "text-blue-400",
+    color: "from-green-500/20 to-green-600/5",
+    border: "border-green-500/20",
+    iconColor: "text-green-400",
     href: "#catalogo",
   },
   {
@@ -36,7 +36,7 @@ const categories = [
     desc: "Puertas completas con vidrio y mecanismo. Stock para principales modelos.",
     color: "from-cyan-500/20 to-cyan-600/5",
     border: "border-cyan-500/20",
-    iconColor: "text-cyan-400",
+    iconColor: "text-green-400",
     href: "#catalogo",
   },
   {
@@ -70,8 +70,8 @@ const categories = [
 
 export default function CategoriesSection() {
   return (
-    <section id="categorias" className="py-24 bg-[#010118] relative overflow-hidden">
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-blue-900/10 rounded-full blur-[120px] pointer-events-none" />
+    <section id="categorias" className="py-24 bg-[#020c02] relative overflow-hidden">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-green-900/10 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -80,7 +80,7 @@ export default function CategoriesSection() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-medium tracking-widest uppercase mb-5">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/25 text-green-400 text-xs font-medium tracking-widest uppercase mb-5">
             Categorías
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4">

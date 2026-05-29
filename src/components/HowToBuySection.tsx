@@ -13,8 +13,8 @@ const steps = [
 
 export default function HowToBuySection() {
   return (
-    <section id="como-comprar" className="py-24 bg-[#010118] relative overflow-hidden">
-      <div className="absolute bottom-0 left-0 w-96 h-96 bg-blue-900/20 rounded-full blur-[120px] pointer-events-none" />
+    <section id="como-comprar" className="py-24 bg-[#020c02] relative overflow-hidden">
+      <div className="absolute bottom-0 left-0 w-96 h-96 bg-green-900/20 rounded-full blur-[120px] pointer-events-none" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
@@ -23,7 +23,7 @@ export default function HowToBuySection() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-medium tracking-widest uppercase mb-5">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/25 text-green-400 text-xs font-medium tracking-widest uppercase mb-5">
             Proceso de Compra
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4">
@@ -42,7 +42,7 @@ export default function HowToBuySection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.08 }}
-              className="group relative p-6 rounded-2xl bg-white/3 border border-white/8 hover:border-blue-500/25 hover:bg-white/5 transition-all duration-300"
+              className="group relative p-6 rounded-2xl bg-white/3 border border-white/8 hover:border-green-500/25 hover:bg-white/5 transition-all duration-300"
             >
               {/* Step number */}
               <div className="text-6xl font-black text-white/4 absolute top-4 right-5 select-none">
@@ -50,8 +50,8 @@ export default function HowToBuySection() {
               </div>
 
               <div className="relative">
-                <div className="w-11 h-11 rounded-xl bg-blue-500/15 border border-blue-500/25 flex items-center justify-center mb-4 group-hover:bg-blue-500/25 transition-colors">
-                  <Icon size={20} className="text-blue-400" />
+                <div className="w-11 h-11 rounded-xl bg-green-500/15 border border-green-500/25 flex items-center justify-center mb-4 group-hover:bg-green-500/25 transition-colors">
+                  <Icon size={20} className="text-green-400" />
                 </div>
                 <h3 className="text-white font-semibold text-base mb-2">{title}</h3>
                 <p className="text-gray-500 text-sm leading-relaxed">{desc}</p>

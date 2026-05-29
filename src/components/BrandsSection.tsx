@@ -7,10 +7,10 @@ const brands = [
     tagline: "La Estrella de la Ruta",
     desc: "Stock completo para Actros MP1 al MP4, Sprinter, Axor, Atego y Arocs. Carrocería, impacto y filtración. Importación directa de calidad OEM.",
     models: ["Actros MP1–MP4", "Sprinter", "Axor", "Atego", "Arocs"],
-    color: "from-blue-600/20 to-blue-900/10",
-    accent: "text-blue-400",
-    border: "border-blue-500/20",
-    glow: "bg-blue-500/10",
+    color: "from-green-600/20 to-green-900/10",
+    accent: "text-green-400",
+    border: "border-green-500/20",
+    glow: "bg-green-500/10",
     logo: "MB",
   },
   {
@@ -19,7 +19,7 @@ const brands = [
     desc: "Focos, parachoques, máscaras, puertas, spoilers, filtros y portafiltros para camiones Volvo. Piezas de importación directa con garantía.",
     models: ["FH 4ta Gen", "FH16", "FM", "FMX", "FL"],
     color: "from-cyan-600/20 to-cyan-900/10",
-    accent: "text-cyan-400",
+    accent: "text-green-400",
     border: "border-cyan-500/20",
     glow: "bg-cyan-500/10",
     logo: "VO",
@@ -72,9 +72,9 @@ const brands = [
 
 export default function BrandsSection() {
   return (
-    <section id="marcas" className="py-24 bg-[#010118] relative overflow-hidden">
+    <section id="marcas" className="py-24 bg-[#020c02] relative overflow-hidden">
       <div className="absolute inset-0 opacity-20">
-        <div className="absolute top-0 left-1/3 w-96 h-96 bg-blue-900/40 rounded-full blur-[120px]" />
+        <div className="absolute top-0 left-1/3 w-96 h-96 bg-green-900/40 rounded-full blur-[120px]" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -84,7 +84,7 @@ export default function BrandsSection() {
           viewport={{ once: true }}
           className="text-center mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-medium tracking-widest uppercase mb-5">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/25 text-green-400 text-xs font-medium tracking-widest uppercase mb-5">
             Marcas Disponibles
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4">

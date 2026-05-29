@@ -4,24 +4,24 @@ import { MessageCircle, Phone, Mail, Share2, Globe } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#010118] border-t border-white/8 pt-14 pb-8">
+    <footer className="bg-[#020c02] border-t border-white/8 pt-14 pb-8">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 mb-12">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center">
+              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-green-500 to-green-700 flex items-center justify-center">
                 <span className="text-white font-black text-sm">JR</span>
               </div>
               <div>
                 <div className="text-white font-bold text-sm">JORMAT</div>
-                <div className="text-blue-400 text-xs tracking-widest uppercase">Repuestos</div>
+                <div className="text-green-400 text-xs tracking-widest uppercase">Repuestos</div>
               </div>
             </div>
             <p className="text-gray-500 text-xs leading-relaxed mb-1">
               Desde 2001 ofreciendo la mayor gama de repuestos y accesorios que su camión necesita.
             </p>
-            <p className="text-blue-400 text-xs font-medium mb-4">
+            <p className="text-green-400 text-xs font-medium mb-4">
               Repuestos que mueven Chile 🇨🇱
             </p>
             <div className="flex gap-3">
@@ -79,8 +79,8 @@ export default function Footer() {
             <div className="space-y-3">
               {[
                 { icon: MessageCircle, text: "+56 9 9179 7881", href: "https://wa.me/56991797881", color: "text-green-400" },
-                { icon: Phone, text: "+56 9 9205 0943", href: "tel:+56992050943", color: "text-blue-400" },
-                { icon: Phone, text: "+56 9 8807 5107", href: "tel:+56988075107", color: "text-blue-400" },
+                { icon: Phone, text: "+56 9 9205 0943", href: "tel:+56992050943", color: "text-green-400" },
+                { icon: Phone, text: "+56 9 8807 5107", href: "tel:+56988075107", color: "text-green-400" },
                 { icon: Mail, text: "jormatrepuestos@gmail.com", href: "mailto:jormatrepuestos@gmail.com", color: "text-purple-400" },
               ].map(({ icon: Icon, text, href, color }) => (
                 <a key={text} href={href} target={href.startsWith("http") ? "_blank" : undefined} rel="noopener noreferrer" className="flex items-center gap-2 text-gray-500 hover:text-gray-300 text-xs transition-colors">

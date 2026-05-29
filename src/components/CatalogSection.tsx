@@ -7,8 +7,8 @@ import ProductModal from "./ProductModal";
 
 const brands: Brand[] = ["Mercedes-Benz", "Volvo", "Scania", "MAN", "Freightliner", "Renault"];
 const categories: Category[] = [
-  "Focos", "Parachoques", "Máscaras frontales", "Puertas",
-  "Kits de spoilers", "Filtros de aire", "Portafiltros de aire",
+  "Accesos y Puertas", "Parachoques", "Corners y Deflectores",
+  "Focos y Luces", "Cajones y Pisaderas", "Kits de Partes", "Filtros",
 ];
 
 function buildWhatsAppLink(product: Product) {
@@ -47,11 +47,11 @@ export default function CatalogSection() {
   const hasFilters = search || selectedBrand || selectedCategory;
 
   return (
-    <section id="catalogo" className="py-24 bg-[#010118] relative overflow-hidden">
+    <section id="catalogo" className="py-24 bg-[#020c02] relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 opacity-30">
-        <div className="absolute top-0 left-1/4 w-80 h-80 bg-blue-900/30 rounded-full blur-[100px]" />
-        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-blue-900/20 rounded-full blur-[100px]" />
+        <div className="absolute top-0 left-1/4 w-80 h-80 bg-green-900/30 rounded-full blur-[100px]" />
+        <div className="absolute bottom-0 right-1/4 w-80 h-80 bg-green-900/20 rounded-full blur-[100px]" />
       </div>
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -63,7 +63,7 @@ export default function CatalogSection() {
           transition={{ duration: 0.7 }}
           className="text-center mb-14"
         >
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/25 text-blue-400 text-xs font-medium tracking-widest uppercase mb-5">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-green-500/10 border border-green-500/25 text-green-400 text-xs font-medium tracking-widest uppercase mb-5">
             Catálogo Completo
           </div>
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4">
@@ -91,7 +91,7 @@ export default function CatalogSection() {
                 placeholder="Buscar por nombre, código o modelo..."
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
-                className="w-full pl-11 pr-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-blue-500/50 focus:bg-white/8 transition-all"
+                className="w-full pl-11 pr-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-green-500/50 focus:bg-white/8 transition-all"
               />
             </div>
             <button
@@ -119,7 +119,7 @@ export default function CatalogSection() {
               onClick={() => setSelectedBrand("")}
               className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all border ${
                 !selectedBrand
-                  ? "bg-blue-600/30 border-blue-500/50 text-blue-300"
+                  ? "bg-green-600/30 border-green-500/50 text-green-300"
                   : "bg-white/5 border-white/10 text-gray-400 hover:bg-white/10"
               }`}
             >
@@ -131,7 +131,7 @@ export default function CatalogSection() {
                 onClick={() => setSelectedBrand(b === selectedBrand ? "" : b)}
                 className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all border ${
                   selectedBrand === b
-                    ? "bg-blue-600/30 border-blue-500/50 text-blue-300"
+                    ? "bg-green-600/30 border-green-500/50 text-green-300"
                     : "bg-white/5 border-white/10 text-gray-400 hover:bg-white/10"
                 }`}
               >
@@ -154,7 +154,7 @@ export default function CatalogSection() {
                   onClick={() => setSelectedCategory("")}
                   className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all border ${
                     !selectedCategory
-                      ? "bg-blue-600/30 border-blue-500/50 text-blue-300"
+                      ? "bg-green-600/30 border-green-500/50 text-green-300"
                       : "bg-white/5 border-white/10 text-gray-400 hover:bg-white/10"
                   }`}
                 >
@@ -166,7 +166,7 @@ export default function CatalogSection() {
                     onClick={() => setSelectedCategory(c === selectedCategory ? "" : c)}
                     className={`px-3 py-1.5 rounded-lg text-xs font-medium transition-all border ${
                       selectedCategory === c
-                        ? "bg-blue-600/30 border-blue-500/50 text-blue-300"
+                        ? "bg-green-600/30 border-green-500/50 text-green-300"
                         : "bg-white/5 border-white/10 text-gray-400 hover:bg-white/10"
                     }`}
                   >
@@ -197,7 +197,7 @@ export default function CatalogSection() {
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, scale: 0.9 }}
                 transition={{ duration: 0.3, delay: i * 0.04 }}
-                className="group relative rounded-2xl overflow-hidden bg-white/5 border border-white/8 hover:border-blue-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/10"
+                className="group relative rounded-2xl overflow-hidden bg-white/5 border border-white/8 hover:border-green-500/30 transition-all duration-300 hover:shadow-xl hover:shadow-green-500/10"
               >
                 {/* Image */}
                 <div className="relative h-44 overflow-hidden">
@@ -206,7 +206,7 @@ export default function CatalogSection() {
                     alt={product.name}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#010118] via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#020c02] via-transparent to-transparent" />
                   {/* Availability badge */}
                   <div className={`absolute top-3 right-3 flex items-center gap-1 px-2 py-1 rounded-full text-xs font-medium border backdrop-blur-md ${
                     product.available
@@ -217,14 +217,14 @@ export default function CatalogSection() {
                     {product.available ? "Disponible" : "Consultar"}
                   </div>
                   {/* Brand badge */}
-                  <div className="absolute top-3 left-3 px-2 py-1 rounded-full text-xs font-medium bg-blue-600/30 border border-blue-500/30 text-blue-300 backdrop-blur-md">
+                  <div className="absolute top-3 left-3 px-2 py-1 rounded-full text-xs font-medium bg-green-600/30 border border-green-500/30 text-green-300 backdrop-blur-md">
                     {product.brand.split("-")[0]}
                   </div>
                 </div>
 
                 {/* Content */}
                 <div className="p-4">
-                  <div className="text-blue-400 text-xs mb-1">{product.category}</div>
+                  <div className="text-green-400 text-xs mb-1">{product.category}</div>
                   <h3 className="text-white font-semibold text-sm mb-1 leading-snug line-clamp-2">
                     {product.name}
                   </h3>
@@ -246,7 +246,7 @@ export default function CatalogSection() {
                     </a>
                     <button
                       onClick={() => setSelectedProduct(product)}
-                      className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-blue-600/10 border border-blue-500/20 text-blue-400 hover:bg-blue-600/25 transition-all text-xs"
+                      className="flex items-center justify-center gap-1.5 px-3 py-2 rounded-lg bg-green-600/10 border border-green-500/20 text-green-400 hover:bg-green-600/25 transition-all text-xs"
                     >
                       <Eye size={12} />
                     </button>
@@ -265,7 +265,7 @@ export default function CatalogSection() {
           >
             <Search size={40} className="mx-auto mb-4 opacity-30" />
             <p className="text-lg">No se encontraron productos</p>
-            <button onClick={clearFilters} className="mt-4 text-blue-400 hover:text-blue-300 text-sm">
+            <button onClick={clearFilters} className="mt-4 text-green-400 hover:text-green-300 text-sm">
               Limpiar filtros
             </button>
           </motion.div>

@@ -40,14 +40,14 @@ export default function Navbar() {
           {/* Logo */}
           <a href="#inicio" className="flex items-center gap-2 group">
             <div className="relative w-9 h-9">
-              <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-blue-500 to-blue-700 opacity-90 group-hover:opacity-100 transition-opacity" />
+              <div className="absolute inset-0 rounded-lg bg-gradient-to-br from-green-500 to-green-700 opacity-90 group-hover:opacity-100 transition-opacity" />
               <div className="absolute inset-0 flex items-center justify-center">
                 <span className="text-white font-black text-sm tracking-tight">JR</span>
               </div>
             </div>
             <div className="hidden sm:block">
               <div className="text-white font-bold text-sm leading-none">JORMAT</div>
-              <div className="text-blue-400 text-xs tracking-widest uppercase">Repuestos</div>
+              <div className="text-green-400 text-xs tracking-widest uppercase">Repuestos</div>
             </div>
           </a>
 
@@ -60,7 +60,7 @@ export default function Navbar() {
                 className="relative px-3 py-2 text-sm text-gray-300 hover:text-white transition-colors duration-200 group"
               >
                 {link.label}
-                <span className="absolute bottom-0 left-0 w-0 h-px bg-blue-400 group-hover:w-full transition-all duration-300" />
+                <span className="absolute bottom-0 left-0 w-0 h-px bg-green-400 group-hover:w-full transition-all duration-300" />
               </a>
             ))}
           </div>
@@ -78,7 +78,7 @@ export default function Navbar() {
             </a>
             <a
               href="#catalogo"
-              className="px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white transition-all duration-300 shadow-lg shadow-blue-500/25"
+              className="px-5 py-2 rounded-full text-sm font-semibold bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 text-white transition-all duration-300 shadow-lg shadow-green-500/25"
             >
               Ver Catálogo
             </a>
